@@ -134,3 +134,9 @@ body {
   }
 }
 
+
+.fall-img {
+  will-change: transform;
+  backface-visibility: hidden;
+  opacity: 0.75;
+}
