@@ -119,15 +119,24 @@ body {
 }
 
 .fall-img {
-  position: absolute;
-  width: 120px;          /* reduced size */
-  opacity: 0.45;
-  animation: fall linear forwards;
+  position: fixed;
+  top: 0;
+  width: 120px;
+  opacity: 0.5;
+
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+  will-change: transform;
+  backface-visibility: hidden;
+  pointer-events: none;
 }
+
 
 @keyframes fall {
   from {
-    transform: translateY(-150px);
+    transform: translateY(-120px);
   }
   to {
     transform: translateY(110vh);
@@ -135,8 +144,4 @@ body {
 }
 
 
-.fall-img {
-  will-change: transform;
-  backface-visibility: hidden;
-  opacity: 0.75;
-}
+
