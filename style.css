@@ -121,8 +121,8 @@ body {
 .fall-img {
   position: fixed;
   top: 0;
-  width: 120px;
-  opacity: 0.5;
+  width: 90px;
+  opacity: 0.45;
 
   animation-name: fall;
   animation-timing-function: linear;
