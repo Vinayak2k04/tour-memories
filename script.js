@@ -8,6 +8,8 @@ function createFallingImage(imgNumber) {
   const img = document.createElement("img");
   img.src = `images/floating/1 (${imgNumber}).jpg`;
   img.className = "fall-img";
+  img.loading = "lazy";
+
 
   img.style.left = Math.random() * 90 + "vw";
   img.style.animationDuration = 6 + Math.random() * 6 + "s";
