@@ -57,10 +57,23 @@ function launchBatch() {
       poolIndex++;
     }, i * 200);
   }
+  if (container.children.length >= MAX_ON_SCREEN) return;
+
 }
 
 
-setInterval(() => {
-  launchBatch();
-}, 4000);
+// setInterval(() => {
+//   launchBatch();
+// }, 4000);
 
+let lastSpawn = 0;
+
+function animateSpawn(time) {
+  if (time - lastSpawn > 3500) {
+    launchBatch();
+    lastSpawn = time;
+  }
+  requestAnimationFrame(animateSpawn);
+}
+
+requestAnimationFrame(animateSpawn);
