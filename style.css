@@ -10,55 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Floating images */
-/* .floating-images img {
-  position: fixed;
-  width: 180px;
-  opacity: 0.45;
-  animation: float 40s linear infinite;
-} */
-/* .floating-images {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.floating-images img {
-  position: absolute;
-  width: 180px;
-  opacity: 0.3;
-  animation-name: fall;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes fall {
-  from {
-    transform: translateY(-200px);
-  }
-  to {
-    transform: translateY(120vh);
-  }
-}
-
-.floating-images img {
-  pointer-events: none;
-  will-change: transform;
-}
-
-
-
-.floating-images img:nth-child(1) { left: 10%; top: -30%; }
-.floating-images img:nth-child(2) { left: 50%; top: -60%; animation-duration: 55s; }
-.floating-images img:nth-child(3) { left: 80%; top: -40%; animation-duration: 45s; }
-
-@keyframes float {
-  from { transform: translateY(0); }
-  to { transform: translateY(200vh); }
-} */
-
 .floating-images {
   position: fixed;
   inset: 0;
