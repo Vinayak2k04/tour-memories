@@ -45,6 +45,10 @@ function createFallingImage(imgNumber) {
   img.onerror = () => img.remove();
 }
 
+if (poolIndex % 100 === 0) {
+  console.log("Images shown:", poolIndex);
+}
+
 
 let imagePool = [];
 let poolIndex = 0;
@@ -84,7 +88,6 @@ shuffleImages();
 // }
 
 function launchBatch() {
-  if (container.children.length >= MAX_ON_SCREEN) return;
 
   for (let i = 0; i < BATCH_SIZE; i++) {
     setTimeout(() => {
